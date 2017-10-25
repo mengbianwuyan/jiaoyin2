@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="jquery/jquery-1.12.0.min.js"></script>
+  <script src="zepto/zepto.js"></script>
+  <script src="zepto/enent.js"></script>
+  <script src="zepto/touch.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="js/rem.js"></script>
+  <title>完善信息</title>
+   
+</head>
+<body>
+
+<!-- 以上为头部部分 -->
+  <header class="jyhead">
+    <div class="leftarrow">
+      <a href="#"><img src="images/leftarrow.png" alt=""></a>
+    </div>
+    <h3>完善信息</h3>
+  </header>
+
+  <!-- 以下是提示信息 -->
+ <section>
+   <div class="message">
+     <p>请完善您的信息，便于我们后续联系您或者为您邮寄礼品</p>
+   </div>
+ </section>
+
+ <!-- 以下是详细信息部分 -->
+ <!-- 公司名称 -->
+ <section>
+   <div class="componeyname">
+     <div class="com-inner">
+      <p>
+       <span class="com-inner1">公司名称</span>
+       <span class="com-inner2"> <input type="text" placeholder="请填写真实单位名称"></span>
+      </p>
+     </div>
+   </div>
+ </section>
+   
+   <!-- 行业性质 -->
+  <section>
+   <div class="fild">
+     <div class="com-inner">
+      <p>
+       <span class="com-inner1">行业性质</span>
+       <span class="com-inner2">请选择</span>
+      <span class="com-inner-rightarrow"> <a href="#"><img src="images/rightarrow.png" alt=""></a></span>
+      </p>
+     </div>
+   </div>
+ </section>
+
+
+ <!-- 公司地址部分 -->
+  <section>
+   <div class="adress">
+     <div class="com-inner">
+       <div class="com-adressname">公司地址</div>
+       <div class="com-adressname-rightpart">
+       <div class="com-adressname-area">省/市/区</div>
+       <div class="com-rigarrow"><a href="#"><img src="images/rightarrow.png" alt=""></a></div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- 详细地址部分 -->
+ <section>
+   <div class="fulladdress">
+     <div class="fulladdressright">
+     <textarea name="fulldress" id="adress" cols="31" placeholder="请填写详细地址"></textarea>
+     </div>
+   </div>
+ </section>
+
+ <!-- 公司电话 -->
+  <section>
+   <div class="cellphone">
+     <div class="com-inner">
+       <div class="com-adressname">公司电话</div>
+       
+       <div class="com-adressname-area" id="aaa">
+         <input type='text'  placeholder="区号" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" />
+          <i class="shuxian shu1"></i>
+         <input type='text'  placeholder="固定电话" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" />
+         <i class="shuxian shu2"></i>
+         <input id="num3" type='text'  placeholder="分机(选填)" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" />
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- 间隔栏 -->
+ <section>
+   <div class="jiange"></div>
+ </section>
+
+<!-- 居住地址 -->
+  <section>
+   <div class="myadress">
+     <div class="com-inner">
+       <div class="com-adressname">居住地址</div>
+       <div class="com-adressname-rightpart">
+       <div class="com-adressname-area">省/市/区</div>
+       <div class="com-rigarrow"><a href="#"><img src="images/rightarrow.png" alt=""></a></div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- 详细地址部分 -->
+ <section>
+   <div class="myfulladdress">
+     <div class="fulladdressright">
+     <textarea name="fulldress" id="adress" cols="31" placeholder="请填写详细地址"></textarea>
+     </div>
+   </div>
+ </section>
+
+ <!-- 直系亲属手机 --> 
+ <section>
+    <div class="familyphone">
+      <div class="com-inner">
+
+          <div class="com-inner1">
+            
+            <div class="comcell"  id="comcell">直系亲属手机</div>
+            <ul id="list">
+              <li>固定电话
+                    <img src="images/gou.png" class="gou" alt="">
+              </li>
+              <li>直系亲属手机
+              <img src="images/gou.png" class="gou" alt="">
+              </li>
+            </ul>
+          </div>
+
+        <span class="com-inner2"> <input id="comper1"  type='text'  placeholder="请输入手机号" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" /> <span id="comper1-warn"></span></span>
+      </div>
+    </div>
+  </section>
+
+   <!-- 间隔栏 -->
+   <section>
+     <div class="jiange2"></div>
+   </section>
+
+  <!-- 联系人电话 -->
+  <section>
+   <div class="personcellphone">
+     <div class="com-inner">
+       <div class="com-adressname">联系人电话</div>
+       
+       <div class="com-adressname-area">
+         <input id="comper2"  type='text'  placeholder="请输入联系人手机号"   onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" /> <span id="comper2-warn"></span>
+       </div> 
+     </div>
+   </div>
+ </section>
+
+<!-- 与您联系 -->
+<section>
+   <div class="community">
+     <div class="com-inner">
+      <p>
+       <span class="com-inner1">行业性质</span>
+       <span class="com-inner2">请选择</span>
+      <span class="com-inner-rightarrow"> <a href="#"><img src="images/rightarrow.png" alt=""></a></span>
+      </p>
+     </div>
+   </div>
+ </section>
+
+<!-- 间隔栏 -->
+<section>
+  <div class="jiange3"></div>
+</section>
+
+<!-- 页脚按钮部分 -->
+<section>
+  <div class="button">
+     <a href="#"> <p>下 一 步</p></a>
+  </div>
+
+</section>
+
+</body>
+</html>

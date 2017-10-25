@@ -1,0 +1,845 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+  background-color: #FFFFFF;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  resize: none;
+  border: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+.mmhead {
+  height: 2.5rem;
+  background-color: #FF841D;
+}
+.mmhead > .mmlogo {
+  width: 7.925rem;
+  height: 1.25rem;
+  margin-left: 0.825rem;
+  margin-top: 0.575rem;
+  float: left;
+}
+.mmhead > .mmback {
+  width: 1.825rem;
+  height: 1.825rem;
+  float: right;
+  margin-right: 0.375rem;
+  margin-top: 0.3rem;
+}
+.scarch {
+  height: 2.5rem;
+  background-color: #FFF;
+  overflow: hidden;
+}
+.scarch > .searchinner {
+  height: 1.6rem;
+  width: 17.75rem;
+  margin: 0 auto;
+  margin: 0.55rem;
+}
+.scarch > .searchinner > .searchtext {
+  width: 14.2rem;
+  height: 1.6rem;
+  background-color: #F1F1F1;
+  border-radius: 17.75rem;
+  font-size: 0.5rem;
+  font-weight: bolder;
+  text-indent: 0.6rem;
+}
+.scarch > .searchinner > .searchbtn {
+  width: 3.125rem;
+  height: 1.6rem;
+  background-color: #FF851E;
+  float: right;
+  border-radius: 17.75rem;
+}
+.scarch > .searchinner > .searchbtn > p {
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  line-height: 1.6rem;
+}
+footer {
+  margin-top: 1.25rem;
+}
+footer .footertlogin {
+  height: 1.75rem;
+}
+footer .footertlogin > ul {
+  zoom: 1;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+footer .footertlogin > ul:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+footer .footertlogin > ul > li {
+  float: left;
+  list-style: none;
+  border-right: 1px solid black;
+  height: 1.75rem;
+}
+footer .footertlogin > ul > li > a {
+  margin-left: 2.0rem;
+  margin-right: 2.0rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: black;
+  line-height: 1.75rem;
+}
+footer .footertlogin > ul > li:last-child {
+  position: relative;
+  border-right: none;
+}
+footer .footertlogin > ul > li:last-child > a {
+  margin-left: 2.5rem;
+}
+footer .footertlogin > ul > li:last-child > a > i {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../images/top.jpg) 0 0 no-repeat;
+  background-size: 100%;
+  left: 1.5rem;
+  top: 0.5rem;
+}
+footer > p {
+  text-align: center;
+  font-size: 0.625rem;
+  margin-top: 0.8rem;
+}
+footer > p > span {
+  color: red;
+}
+body {
+  background-color: #fff;
+}
+.jyhead {
+  height: 3.25rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  border-bottom: 0.025rem #d8d8d8 solid;
+}
+.jyhead .leftarrow {
+  width: 0.925rem;
+  height: 0.925rem;
+  float: left;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4625rem;
+  margin-left: 0.5rem;
+}
+.jyhead .leftarrow a {
+  display: block;
+}
+.jyhead h3 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1.0rem;
+  color: black;
+}
+section {
+  width: 100%;
+}
+section .message {
+  height: 1.95rem;
+  background-color: #f2f2f2;
+  border-bottom: 0.025rem #d8d8d8 solid;
+  overflow: hidden;
+}
+section .message p {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #989898;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.825rem;
+}
+.componeyname {
+  position: relative;
+  width: 100%;
+  height: 2.475rem;
+  border-bottom: 0.025rem #d8d8d8 solid;
+  background-color: #ffff;
+}
+.componeyname .com-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -0.35rem;
+}
+.componeyname .com-inner p .com-inner1 {
+  margin-left: 0.75rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+.componeyname .com-inner p .com-inner2 {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+.componeyname .com-inner p .com-inner2 input {
+  color: black;
+  font-size: 0.7rem;
+  width: 11rem;
+  height: 0.9rem;
+  margin-left: 3.2rem;
+}
+.componeyname .com-inner p .com-inner2 input::-webkit-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.componeyname .com-inner p .com-inner2 input::-moz-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.componeyname .com-inner p .com-inner2 input:-ms-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.fild {
+  position: relative;
+  width: 100%;
+  height: 2.475rem;
+  border-bottom: 0.025rem #d8d8d8 solid;
+  background-color: #ffff;
+}
+.fild .com-inner {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.35rem;
+}
+.fild .com-inner p .com-inner1 {
+  width: 100%;
+  margin-left: 0.75rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+.fild .com-inner p .com-inner2 {
+  width: 18.75rem;
+  line-height: 0.7rem;
+  margin-left: 3.2rem;
+  color: #989898;
+  font-size: 0.625rem;
+}
+.fild .com-inner p .com-inner-rightarrow {
+  float: right;
+  right: 0.0rem;
+  margin-left: 8.35rem;
+}
+.fild .com-inner p .com-inner-rightarrow a {
+  display: block;
+}
+.fild .com-inner p .com-inner-rightarrow a img {
+  width: 0.825rem;
+  height: 0.825rem;
+}
+.adress {
+  width: 100%;
+  height: 2.475rem;
+  background-color: #ffff;
+  position: relative;
+}
+.adress .com-inner {
+  height: 0.925rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4625rem;
+}
+.adress .com-inner .com-adressname {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-left: 0.75rem;
+  float: left;
+}
+.adress .com-inner .com-adressname-area {
+  float: left;
+  line-height: 0.7rem;
+  margin-left: 3.2rem;
+  color: #989898;
+  font-size: 0.625rem;
+}
+.adress .com-inner .com-rigarrow {
+  float: right;
+}
+.adress .com-inner .com-rigarrow a {
+  display: block;
+}
+.adress .com-inner .com-rigarrow a img {
+  width: 0.825rem;
+  height: 0.825rem;
+  margin-right: 0.75rem;
+}
+.fulladdress {
+  height: 3.425rem;
+  border-bottom: 0.025rem #d8d8d8 solid;
+}
+.fulladdress .fulladdressright {
+  border-top: 0.025rem solid #d8d8d8;
+  height: 3.425rem;
+  width: 11.8rem;
+  float: right;
+}
+.fulladdress .fulladdressright textarea {
+  margin-top: 0.75rem;
+  border: none;
+  font-size: 0.7rem;
+}
+.fulladdress .fulladdressright textarea::-webkit-input-placeholder {
+  color: red;
+  font-size: 0.675rem;
+  line-height: 0.70rem;
+  color: #989898;
+  font-family: 'Microsoft YaHei';
+}
+.cellphone {
+  width: 100%;
+  height: 2.475rem;
+  background-color: #ffff;
+  position: relative;
+}
+.cellphone .com-inner {
+  height: 0.925rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4625rem;
+}
+.cellphone .com-inner .com-adressname {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-left: 0.75rem;
+  float: left;
+}
+.cellphone .com-inner .com-adressname-area {
+  float: right;
+}
+.cellphone .com-inner .com-adressname-area input {
+  color: black;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  height: 0.9rem;
+}
+.cellphone .com-inner .com-adressname-area input:nth-child(1) {
+  width: 2.175rem;
+}
+.cellphone .com-inner .com-adressname-area input:nth-child(2) {
+  width: 4.75rem;
+}
+.cellphone .com-inner .com-adressname-area input:nth-child(3) {
+  width: 5.0rem;
+}
+.cellphone .com-inner .com-adressname-area #num3 {
+  width: 5.0rem;
+  background-color: #fff;
+}
+.cellphone .com-inner .com-adressname-area input::-webkit-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+  text-align: center;
+}
+.cellphone .com-inner .com-adressname-area input::-moz-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+  text-align: center;
+}
+.cellphone .com-inner .com-adressname-area input:-ms-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+  text-align: center;
+}
+.jiange {
+  width: 100%;
+  height: 0.45rem;
+  background-color: #f2f2f2;
+  border-top: 0.025rem solid  #d8d8d8;
+  border-bottom: 0.025rem solid  #d8d8d8;
+}
+.myadress {
+  width: 100%;
+  height: 2.475rem;
+  background-color: #ffff;
+  position: relative;
+}
+.myadress .com-inner {
+  height: 0.925rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4625rem;
+}
+.myadress .com-inner .com-adressname {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-left: 0.75rem;
+  float: left;
+}
+.myadress .com-inner .com-adressname-area {
+  float: left;
+  line-height: 0.7rem;
+  margin-left: 3.4rem;
+  color: #989898;
+  font-size: 0.625rem;
+}
+.myadress .com-inner .com-rigarrow {
+  float: right;
+}
+.myadress .com-inner .com-rigarrow a {
+  display: block;
+}
+.myadress .com-inner .com-rigarrow a img {
+  width: 0.825rem;
+  height: 0.825rem;
+  margin-right: 0.75rem;
+}
+.myfulladdress {
+  height: 3.4rem;
+}
+.myfulladdress .fulladdressright {
+  border-top: 0.025rem solid #d8d8d8;
+  height: 3.425rem;
+  width: 11.8rem;
+  float: right;
+}
+.myfulladdress .fulladdressright textarea {
+  padding: 0.25rem 0;
+  margin-top: 0.75rem;
+  border: none;
+  font-size: 0.7rem;
+  line-height: 0.588rem;
+}
+.myfulladdress .fulladdressright textarea::-webkit-input-placeholder {
+  color: red;
+  font-size: 0.675rem;
+  line-height: 0.70rem;
+  color: #989898;
+  font-family: 'Microsoft YaHei';
+}
+.familyphone {
+  position: relative;
+  width: 100%;
+  height: 2.475rem;
+  border-bottom: 0.025rem #d8d8d8 solid;
+  border-top: 0.025rem #d8d8d8 solid;
+  background-color: #ffff;
+}
+.familyphone .com-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -0.35rem;
+  display: block;
+}
+.familyphone .com-inner .com-inner1 .comcell {
+  position: relative;
+  width: 4.7rem;
+  margin-left: 0.75rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  padding-bottom: 0.25rem;
+  float: left;
+}
+.familyphone .com-inner .com-inner1 .comcell:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.2rem;
+  content: "";
+  display: inline-block;
+  width: 0.0rem;
+  height: 0.0rem;
+  border-left: 0.175rem solid transparent;
+  border-right: 0.175rem solid transparent;
+  border-top: 0.25rem solid black;
+  right: -0.125rem;
+}
+.familyphone .com-inner .com-inner1 #list {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.725rem;
+  float: left;
+  z-index: 1;
+  border: 1px solid #e8e8e8;
+}
+.familyphone .com-inner .com-inner1 #list li {
+  background-color: #f4f8fd;
+  font-size: 0.65rem;
+  line-height: 2.0rem;
+  text-indent: 0.75rem;
+  text-align: left;
+  border: 1px solid #e8e8e8;
+  height: 2.0rem;
+  width: 6.5rem;
+  position: relative;
+}
+.familyphone .com-inner .com-inner1 #list li img {
+  width: 0.9rem;
+  height: 0.9rem;
+  float: right;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.45rem;
+  right: 0.45rem;
+}
+.familyphone .com-inner .com-inner2 {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  float: right;
+  margin-right: 0.75rem;
+  position: relative;
+}
+.familyphone .com-inner .com-inner2 #comper1-warn {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 0.3rem;
+  color: red;
+}
+.familyphone .com-inner .com-inner2 input {
+  position: relative;
+  color: black;
+  font-size: 0.7rem;
+  width: 11rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  margin-right: 0rem;
+  top: -0.125rem;
+}
+.familyphone .com-inner .com-inner2 input::-webkit-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.familyphone .com-inner .com-inner2 input::-moz-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.familyphone .com-inner .com-inner2 input:-ms-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.jiange2 {
+  width: 100%;
+  height: 0.45rem;
+  background-color: #f2f2f2;
+  border-bottom: 0.025rem solid  #d8d8d8;
+}
+.personcellphone {
+  width: 100%;
+  height: 2.475rem;
+  background-color: #ffff;
+  position: relative;
+}
+.personcellphone .com-inner {
+  height: 0.7rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4625rem;
+}
+.personcellphone .com-inner .com-adressname {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-left: 0.75rem;
+  float: left;
+}
+.personcellphone .com-inner .com-adressname-area {
+  float: left;
+  margin-left: 2.8rem;
+  position: relative;
+}
+.personcellphone .com-inner .com-adressname-area #comper2-warn {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  font-size: 0.3rem;
+  color: red;
+}
+.personcellphone .com-inner .com-adressname-area input {
+  color: black;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  height: 0.9rem;
+  width: 11rem;
+}
+.personcellphone .com-inner .com-adressname-area input::-webkit-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+}
+.personcellphone .com-inner .com-adressname-area input::-moz-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+  text-align: center;
+}
+.personcellphone .com-inner .com-adressname-area input:-ms-input-placeholder {
+  color: #989898;
+  font-size: 0.625rem;
+  background-color: #ffff;
+  text-align: center;
+}
+.community {
+  position: relative;
+  width: 100%;
+  height: 2.475rem;
+  border-bottom: 0.025rem #d8d8d8 solid;
+  background-color: #ffff;
+}
+.community .com-inner {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.35rem;
+}
+.community .com-inner p .com-inner1 {
+  width: 100%;
+  margin-left: 0.75rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+.community .com-inner p .com-inner2 {
+  width: 18.75rem;
+  line-height: 0.7rem;
+  margin-left: 3.2rem;
+  color: #989898;
+  font-size: 0.625rem;
+}
+.community .com-inner p .com-inner-rightarrow {
+  float: right;
+  right: 0.0rem;
+  margin-left: 8.35rem;
+}
+.community .com-inner p .com-inner-rightarrow a {
+  display: block;
+}
+.community .com-inner p .com-inner-rightarrow a img {
+  width: 0.825rem;
+  height: 0.825rem;
+}
+.jiange3 {
+  width: 100%;
+  height: 2.45rem;
+  border-bottom: 0.025rem solid #d8d8d8;
+  background-color: #f2f2f2;
+}
+.button {
+  height: 3.0rem;
+  width: 100%;
+  position: relative;
+}
+.button a {
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  width: 17.2rem;
+  height: 2.0rem;
+  background-color: #2171d0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2.2rem;
+}
+.button a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  color: white;
+}
+.gou {
+  display: none;
+}
+.shuxian {
+  display: inline-block;
+  width: 0.025rem;
+  height: 1.2rem;
+  border-right: 0.025rem solid #e7e7e7;
+  position: absolute;
+}
+.shu1 {
+  top: -0.025rem;
+}
+.shu2 {
+  top: -0.025rem;
+}
+#aaa {
+  position: relative;
+  box-sizing: border-box;
+}
